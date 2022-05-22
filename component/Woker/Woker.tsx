@@ -12,7 +12,7 @@ function Woker() {
       <p className="text-muted">All the latest news, tips and advice for indies</p>
       <ButtonGroup />
       {
-        slidesData.forEach(data =>
+        slidesData.map(data =>
           <MediaCard data={data} key={data.id} />
         )
       }
