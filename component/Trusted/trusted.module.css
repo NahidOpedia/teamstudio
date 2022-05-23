@@ -1,11 +1,23 @@
 .leftLogoSection{
     width: 50%;
 }
+.rightVideoSection{
+    width: 50%;
+}
 
 .trastedHeading{
     color: #4a4f55;
+    text-align: center;
+    margin-bottom: 0.42857em;
+    line-height: 1.2;
+    font-size: 2.125em;
+    font-weight: 600;
 }
 
+
+.wrapper{
+    display: flex;
+}
 .row{
     display: flex;
     width: 100%;
@@ -25,6 +37,23 @@
     justify-content: space-evenly;
 }
 
+
+
+.row1 .imgdiv{
+    border: 1px solid;
+    width: 100%;
+    /* height: auto; */
+    min-height: 200px;
+    position: relative;
+}
+
+.row2 .imgdiv{
+    border: 1px solid;
+    width: 100%;
+    /* height: 300px; */
+    min-height: 200px;
+    position: relative;
+}
 
 .row2{
     display: flex;

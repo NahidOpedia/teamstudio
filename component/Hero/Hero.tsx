@@ -27,11 +27,13 @@ function Hero() {
         </div>
 
         {/* right image section */}
-        <div className="right-image-content">
+        <div className={styles.rightImageContent}>
           <Image
             src="/img/hero-image.webp"
             width={500}
-            height={500} />
+            height={300}
+            layout="responsive"
+          />
         </div>
       </div>
     </div>
