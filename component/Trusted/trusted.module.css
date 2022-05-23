@@ -1,0 +1,34 @@
+.leftLogoSection{
+    width: 50%;
+}
+
+.trastedHeading{
+    color: #4a4f55;
+}
+
+.row{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.row img{
+    height: auto;
+    width: 100px;
+}
+
+
+.row1{
+    display: flex;
+    width: 100%;
+    border: 1px solid;
+    justify-content: space-evenly;
+}
+
+
+.row2{
+    display: flex;
+    width: 100%;
+    border: 1px solid;
+    justify-content: space-evenly;
+}
