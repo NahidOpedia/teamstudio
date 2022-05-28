@@ -4,6 +4,7 @@ import styles from './trusted.module.css';
 
 function Trusted() {
   return <div className={styles.wrapper}>
+    {/* left side start*/}
     <div className={styles.leftLogoSection}>
       <h3 className={styles.trastedHeading}>Trusted by...</h3>
       <div className={styles.row}>
@@ -32,9 +33,13 @@ function Trusted() {
         </div>
       </div>
     </div>
+    {/* left side end */}
+
+    {/* right side start */}
     <div className={styles.rightVideoSection}>
       <iframe src="https://www.youtube.com/embed/BmzS0MNyH9I" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
     </div>
+    {/* right side end */}
   </div>;
 }
 
