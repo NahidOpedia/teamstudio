@@ -12,7 +12,7 @@ function Woker() {
       <h1>The Independent Worker</h1>
       <p className="text-muted">All the latest news, tips and advice for indies</p>
       <ButtonGroup />
-      <div className="row">
+      <div className="d-flex">
         {
           slidesData.map(data =>
             <MediaCard data={data} key={data.id} />
