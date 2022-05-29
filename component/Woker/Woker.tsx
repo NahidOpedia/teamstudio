@@ -5,17 +5,20 @@ import slidesData from "./slides.json"
 
 
 function Woker() {
-  console.log(slidesData)
+  const [activeSlides, setActiveSlides] = React.useState([0, 1, 2, 3]);
+
   return (
-    <div style={{ margin: "1rem 0" }}>
+    <div style={{ margin: "1rem auto" }} className="container">
       <h1>The Independent Worker</h1>
       <p className="text-muted">All the latest news, tips and advice for indies</p>
       <ButtonGroup />
-      {
-        slidesData.map(data =>
-          <MediaCard data={data} key={data.id} />
-        )
-      }
+      <div className="row">
+        {
+          slidesData.map(data =>
+            <MediaCard data={data} key={data.id} />
+          )
+        }
+      </div>
     </div>
   );
 }
@@ -51,12 +54,12 @@ type MediaProp = {
 }
 const MediaCard = ({ data }: MediaProp) => {
   return (
-    <div>
+    <div className="">
       <div>
 
       </div>
       <div>
-        <h3>{data.title}</h3>
+        <h5>{data.title}</h5>
       </div>
     </div>
   )
