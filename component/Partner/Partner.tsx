@@ -1,3 +1,7 @@
+/**
+ * Copy of Resources Nav Items
+ */
+
 import React from "react";
 
 function Partner() {
