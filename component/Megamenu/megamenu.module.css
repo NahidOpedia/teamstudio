@@ -1,0 +1,100 @@
+
+/* Add color class where text-color is primary */
+.color {
+    color: #4c36b1;
+}
+
+/* Nav card style */
+.navCard {
+    box-shadow: rgb(0 0 0 / 20%) 0px 3px 5px -1px, rgba(62, 63, 77, 0.10) 0px 8px 10px 0px;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    overflow: hidden;
+    max-width: 540px;
+}
+
+.navCard .navLeftItems {
+    padding: 1.25rem;
+    padding-top: 1.5rem;
+    width: 100%;
+}
+
+.navCard .navRightItems {
+    padding: 1.25rem;
+    padding-top: 1.5rem;
+    background-color: #f4f4f4;
+    width: 100%;
+}
+
+@media (min-width: 992px) { 
+    .navCard {
+        max-width: 100%;
+    }
+    .navCard .navLeftItems {
+        width: 75%;
+    }
+    .navCard .navRightItems {
+        width: 25%;
+    }
+}
+
+/* Strong Link Component Styling */
+.strongLink {
+    cursor: pointer;
+    font-size: .9rem;
+    line-height: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 8px;
+    color: rgb(54, 54, 54);
+}
+
+.strongLink:hover {
+    color: #4c36b1;
+}
+
+/* navCard right section title, navCard left section title */
+.leftTitle, .rightTitle{
+    color: rgb(170, 170, 170);
+    text-transform: uppercase;
+    font-size: .9rem;
+    letter-spacing: 1px;
+    margin-bottom: .5rem;
+}
+
+
+/* Nav Menu Item Style */
+.item {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: .75rem;
+    max-width: 250px;
+    box-sizing: border-box;
+}
+
+.item:hover {
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.item p {
+    margin: 0;
+    padding: 0
+}
+
+.item .icon:first-child {
+    font-size: 2rem;
+}
+
+.item .right .title {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.item .right .subtitle {
+    font-size: .9rem;
+    font-weight: 500;
+}

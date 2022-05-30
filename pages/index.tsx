@@ -3,12 +3,15 @@ import Head from "next/head";
 import Image from "next/image";
 import Header from "../component/Header/Header";
 import Hero from "../component/Hero/Hero";
-import Megamenu from "../component/Megamenu/Megamenu";
+// import Megamenu from "../component/Megamenu/Megamenu";
 import Partner from "../component/Partner/Partner";
 import Trusted from "../component/Trusted/Trusted";
 import Woker from "../component/Woker/Woker";
+
+import { Resources, Product, WhyTeamStudio } from "../component/Megamenu/Megamenu";
+import Footer from "../component/Footer/Footer";
+
 // import Feedback from "../component/Feedback";
-// import Footer from "../component/Footer";
 // import Header from "../component/Header";
 // import Hero from "../component/Hero";
 import Meta from "../component/Meta";
@@ -35,12 +38,20 @@ const Home: NextPage = () => {
         {/* new site components.. older code will be removed soon */}
 
         <Header />
-        <Megamenu />
+        <div>
+          Mega Menu
+          <Product />
+          <br />
+          <Resources />
+          <br />
+          <WhyTeamStudio />
+        </div>
         <Hero />
         <Trusted />
         <Woker />
-        <Partner />
-        <CustomerCare />
+        {/* <Partner />
+        <CustomerCare /> */}
+        <Footer />
       </div>
     </div>
   );
